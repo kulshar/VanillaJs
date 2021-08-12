@@ -31,10 +31,14 @@ document.getElementById("app").innerHTML = `
 
 var password = document.querySelector("#password");
 var toggle = document.querySelector("#show-password");
-toggle.addEventListener("click", function (event) {
-  if (toggle.checked) {
-    password.type = "text";
-  } else {
-    password.type = "password";
-  }
-});
+toggle.addEventListener(
+  "click",
+  function (event) {
+    if (toggle.checked) {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  },
+  false
+);
